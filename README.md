@@ -1,0 +1,1 @@
+This project demonstrates basic proficiency with creating a sign up form for a website. Knowledge of forms, validation, and form styling are demonstrated.
