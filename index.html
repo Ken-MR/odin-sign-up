@@ -14,7 +14,26 @@
     </div>
     <div class="main-body">
         <div class="club-description">Info</div>
-        <div class="personal-info">Sign Up Inputs</div>
+        <div class="personal-info">
+            <h1>Join Now!</h1>
+            <form action="/submission-form" method="post">
+                <ul>
+                    <li>
+                        <label for="first">*First Name: <input type="text" id="first" name="first_name" required></label>
+                        <label for="last">*Last Name: <input type="text" id="last" name="last_name" required></label>
+                    </li>
+                    <li>
+                        <label for="mail">*Email: <input type="email" id="mail" name="email" required></label>
+                        <label for="number">Phone Number: <input type="tel" id="number" name="phone"></label>
+                    </li>
+                    <li>
+                        <label for="pass">*Password: <input type="password" id="pass" name="pass" required></label>
+                        <label for="confirm">Confirm Password <input type="password" id="confirm" name="test" required></label>
+                    </li>
+                </ul>
+                <button type="submit" class="entry">Send your message</button>
+            </form>
+        </div>
         <div class="create-account">Create Account</div>
     </div>
 </body>
