@@ -26,20 +26,36 @@
             <form action="/submission-form" method="post">
                 <ul>
                     <li>
-                        <label for="first">*First Name: <input type="text" id="first" name="first_name" required></label>
-                        <label for="last">*Last Name: <input type="text" id="last" name="last_name" required></label>
+                        <label for="first">
+                            *First Name: 
+                            <input type="text" id="first" name="first_name" minlength="2" maxlength="15" pattern="[a-zA-Z]+" required>
+                        </label>
+                        <label for="last">
+                            *Last Name: 
+                            <input type="text" id="last" name="last_name" minlength="2" maxlength="15" pattern="[a-zA-Z]+" required>
+                        </label>
                     </li>
                     <li>
-                        <label for="mail">*Email: <input type="email" id="mail" name="email" required></label>
-                        <label for="number">Phone Number: <input type="tel" id="number" name="phone"></label>
+                        <label for="mail">*Email: 
+                            <input type="email" id="mail" name="email" required>
+                        </label>
+                        <label for="number">Phone Number: 
+                            <input type="tel" id="number" name="phone">
+                        </label>
                     </li>
                     <li>
-                        <label for="pass">*Password: <input type="password" id="pass" name="pass" required></label>
-                        <label for="confirm">Confirm Password <input type="password" id="confirm" name="test" required></label>
+                        <label for="pass">*Password: 
+                            <input type="password" id="pass" name="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                            title="Please enter a password that is a minimum 8 characters and has one letter and one Number." required>
+                        </label>
+                        <label for="confirm">Confirm Password 
+                            <input type="password" id="confirm" name="test" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                            title="Please enter a password that is a minimum 8 characters and has one letter and one Number." required>
+                        </label>
                     </li>
                 </ul>
                 <div class="create-account">
-                    <button type="submit" class="entry">Send your message</button>
+                    <input type="submit" class="entry">
                 </div>
             </form>
         </div>

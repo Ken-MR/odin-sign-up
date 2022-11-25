@@ -107,7 +107,7 @@ input:focus {
     border-color: #000;
 }
   
-button {
+input[type="submit"] {
     margin-left: 0.5em;
     padding: 5px;
     background-color: #596D48;
