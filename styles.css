@@ -37,6 +37,22 @@ body {
 .club-description {
     flex: auto;
     background-color: lightgrey;
+    padding-left: 20px;
+}
+
+.disclaimer, .info-text {
+    padding: 0;
+    margin: 0;
+}
+
+.disclaimer {
+    font-size: .75em;
+    padding-top: 10px;
+}
+
+.info-text {
+    font-size: 1em;
+    margin-top: 30px;
 }
 
 .personal-info {
@@ -45,8 +61,9 @@ body {
 }
 
 .create-account {
-    flex: auto;
     background-color: lightgrey;
+    position: relative;
+    top: 5em;
 }
 
 
@@ -92,9 +109,9 @@ input:focus {
   
 button {
     margin-left: 0.5em;
-    position: relative;
-    top: 5em;
     padding: 5px;
+    background-color: #596D48;
+
 }
 
 h1 {
