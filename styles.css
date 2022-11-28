@@ -27,7 +27,7 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    flex: 2 1 auto;
+    flex: 2 1 80%;
 }
 
 .club-description {
@@ -64,10 +64,10 @@ body {
 
 form {
     margin: 0 auto;
-    /*width: 45vw;*/
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    max-width: 45vw;
 }
   
 ul {
@@ -91,7 +91,7 @@ label {
     text-align: left;
 }
   
-input {
+label > input {
     font: 1em sans-serif;
     width: 20vw;
     box-sizing: border-box;
@@ -104,9 +104,13 @@ input:focus {
 }
   
 .entry {
-    margin-left: 0.5em;
-    padding: 5px;
+    padding: 10px 30px;
     background-color: #596D48;
+    position: relative;
+    top: 3em;
+    left: 3em;
+    border: 1px solid #596D48;
+    border-radius: 10px;
 }
 
 input[type="password"]:invalid:focus {
