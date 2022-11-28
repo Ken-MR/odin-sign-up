@@ -15,13 +15,27 @@ body {
 .side-banner-text {
     position: absolute;
     bottom: 0px;
-    font-size: 5rem;
+    font-size: 5em;
     opacity: 40%;
     background-color: rgb(16, 19, 19);
     text-align: center;
     justify-content: center;
     color: white;
     padding: 10px 20px;
+}
+
+@media screen and (max-height: 900px) {
+    .side-banner-text {
+        position: absolute;
+        bottom: 0px;
+        font-size: 3em;
+        opacity: 40%;
+        background-color: rgb(16, 19, 19);
+        text-align: center;
+        justify-content: center;
+        color: white;
+        padding: 10px 20px;
+    }
 }
 
 .main-body {
