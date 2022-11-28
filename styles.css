@@ -61,9 +61,8 @@ body {
 }
 
 .create-account {
+    flex: auto;
     background-color: lightgrey;
-    position: relative;
-    top: 5em;
 }
 
 
@@ -107,11 +106,14 @@ input:focus {
     border-color: #000;
 }
   
-input[type="submit"] {
+.entry {
     margin-left: 0.5em;
     padding: 5px;
     background-color: #596D48;
+}
 
+input[type="password"]:invalid {
+    outline-color: red;
 }
 
 h1 {
