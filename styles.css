@@ -5,15 +5,11 @@
 
 body {
     display: flex;
-    width: 100vw;
-    height: 100vh;
 }
 
 .side-banner {
     font-family: 'the-curious-cat', sans-serif;
-    flex: 1 1 45%;
-    background-image: url("cats.jpg");
-    background-size: 100vh 45vw;
+    flex: 1 1 auto;
 }
 
 .side-banner-text {
@@ -22,7 +18,7 @@ body {
     font-size: 5rem;
     opacity: 40%;
     background-color: rgb(16, 19, 19);
-    width: 45vw;
+    max-width: 45vw;
     text-align: center;
     color: white;
 }
@@ -31,7 +27,7 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    flex: 1 1 55%;
+    flex: 2 1 auto;
 }
 
 .club-description {
@@ -68,7 +64,7 @@ body {
 
 form {
     margin: 0 auto;
-    width: 45vw;
+    /*width: 45vw;*/
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
@@ -119,4 +115,9 @@ input[type="password"]:invalid:focus {
 
 h1 {
     padding-left: 1.5em;
+}
+
+img {
+    max-width: 45vw;
+    height: 100vh;
 }
