@@ -107,11 +107,18 @@ input:focus {
 .entry {
     padding: 10px 30px;
     background-color: #596D48;
+    border: 1px solid #596D48;
+    border-radius: 10px;
+}
+
+.returning, .entry {
     position: relative;
     top: 3em;
     left: 3em;
-    border: 1px solid #596D48;
-    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 input[type="password"]:invalid:focus {
